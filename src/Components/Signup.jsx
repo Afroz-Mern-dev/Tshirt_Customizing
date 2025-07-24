@@ -28,7 +28,7 @@ const Signup = () => {
     setError("");
     
     try {
-      const res = await axios.post(`${BACKEND_URL}/api/auth/signup1, formData);
+      const res = await axios.post(`${BACKEND_URL}/api/auth/signup`, formData);
       if (res.status === 201) {
         navigate("/login"); 
       }
