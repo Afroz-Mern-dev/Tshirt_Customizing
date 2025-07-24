@@ -20,7 +20,7 @@ import Login from './Components/Login';
 import Signup from './Components/Signup';
 import Home from './Components/Home';
 import ProductDetails from './Components/ProductDetails';
-import ProductsInfo from './Components/Productsifo';
+import ProductsInfo from './Components/ProductsInfo';
 import Cart from './Components/Cart';
 import Account from './Components/Account';
 import Design from "./Components/Design";
