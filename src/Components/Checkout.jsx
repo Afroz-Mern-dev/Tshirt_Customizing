@@ -6,6 +6,8 @@ import Googlepay from "../assets/google-pay.png";
 import phonepay from "../assets/phonepayicon.png";
 import CashonDelivery from "../assets/payment-method.png";
 import axios from "axios";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 
 const Checkout = () => {
   const [selectedPayment, setSelectedPayment] = useState(null);
@@ -77,7 +79,7 @@ const handlePayNow = async () => {
   const createOrder = async (paymentMethod) => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/orders/create",
+        `${BACKEND_URL}/api/orders/create`,
         {
           items: orderItems,
           totalPrice: orderTotal,
