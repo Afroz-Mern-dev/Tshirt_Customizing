@@ -6,6 +6,8 @@ import Typography from "@mui/material/Typography";
 import LoginImg from "../assets/Newlogin.png";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -26,7 +28,7 @@ const Signup = () => {
     setError("");
     
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/signup", formData);
+      const res = await axios.post(`${BACKEND_URL}/api/auth/signup1, formData);
       if (res.status === 201) {
         navigate("/login"); 
       }
