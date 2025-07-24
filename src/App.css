@@ -1,0 +1,900 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.Appbar {
+  background-color: rgb(74, 114, 233) !important;
+}
+
+ .subcards {
+    background-color: #0f3443 !important;
+  }
+
+  .subcards h4 {
+    color: white;
+  }
+
+.dash-line-heading {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+  white-space: nowrap;
+  margin: 20px 0;
+}
+
+.dash-line-heading::after {
+  content: "";
+  flex-grow: 1;
+  margin-left: 10px;
+  border-bottom: 2px dashed grey;
+  transform: translateY(0.3em);
+}
+
+.Login {
+  width: 100%;
+  height: 97vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+.Top {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.Top .text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  color: rgb(108, 9, 239);
+  margin-top: -0.5rem;
+}
+
+img.image {
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+  margin-top: -5%;
+}
+
+.move2 {
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 8px 26px 20px rgb(108, 9, 239);
+  background-color: white;
+  width: 90%;
+  max-width: 300px;
+  height: auto;
+  margin: 1rem auto;
+  margin-left: 0.5% !important;
+}
+
+.move {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1% !important;
+  ;
+}
+
+.form {
+  width: 100%;
+  max-width: 350px;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.circles {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.circles > div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #ccc; 
+}
+
+.circleone {
+  background-color: white;
+  border: 2px solid #999;
+}
+
+.circletwo {
+  background-color: black;
+}
+
+.circlethree {
+  background-color: grey;
+}
+
+.circlefour {
+  background-color: green;
+}
+
+.circlefive {
+  background-color: red;
+}
+
+button.DesignBtn {
+  background-color: maroon !important;
+  border: none;
+  margin-top: 1.7%;
+}
+
+button.Buynowbtn {
+  background-color: orange !important;
+  border: none;
+  margin-left: 3% !important;
+}
+
+button.removebtn {
+  background-color: rgb(0, 78, 78) !important;
+  border: none;
+  margin-left: 5%;
+}
+button.Addtextbtn {
+  background-color: green !important;
+  border: none;
+  margin-left: 1%;
+}
+button.switchbtn {
+  background-color: rgb(3, 159, 159) !important;
+  border: none;
+  border-radius: 50%;
+  height: 6vh;
+  width: 3%!important;
+  font-size: 0.5rem;
+  color: white;
+  margin-left: -1% !important;
+}
+input.inputtext {
+  padding: 0.4rem;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid gray;
+}
+button.continuebtn {
+  background-color: rgb(0, 139, 109);
+  margin-left: 5% !important;
+  color: white;
+}
+
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  img.image {
+    width: 190px;
+    height: 190px;
+    margin-left: -5%;
+    margin-top: 1rem;
+  }
+
+  .form {
+    padding: 1rem;
+  }
+  .move2 {
+    margin-top: -95%;
+    margin-left: -5%;
+    height: 90vh;
+  }
+  .move {
+    margin-top: 3%;
+    margin-left: -9%;
+    box-shadow: none;
+  }
+  .welcometext {
+    margin-top: -10%;
+    padding: 2px;
+    font-size: 1rem;
+  }
+  .Top .text h2 {
+    margin-top: 1rem;
+  }
+  img.slides {
+    height: 25vh;
+    margin-left: 60%;
+    padding: 15px;
+  }
+  h3.slidetext {
+    width: 100%;
+    font-size: 0.6rem;
+    margin-top: 5%;
+    margin-left: -36%;
+  }
+  button.explorebtn {
+    border: none;
+    margin-left: -3%;
+    width: 45%;
+    font-size: 0.6rem;
+  }
+
+  h3.textslide {
+    width: 66%;
+    font-size: 0.6rem;
+    font-style: oblique;
+    color: black;
+    position: relative; 
+    top: -20px !important;         
+    margin: 0 auto;
+    margin-left: 15%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  p.para {
+    font-size: 0.5rem;
+    margin-left: -21%;
+    width: 70%;
+    color: black;
+  }
+
+  img.subcard {
+    height: 36px !important;
+    width: 20%;
+    margin-left: 36%;
+    padding: 2px;
+
+  }
+  .subcards {
+    background-color: #f5f7e3 !important;
+    width: 49%;
+  }
+
+  .subcards h4 {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .secondcard {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 0.1rem;
+    margin: 0.4rem;
+  }
+  img.subslide {
+    height: 25vh;
+    width: 40%;
+    margin-left: 59%;
+    margin-top: -20%;
+  }
+  p.cardpara {
+    margin-top: -30%;
+    font-size: 0.7rem !important;
+    width: 60%;
+    margin-left: 5%;
+  }
+  
+  h4.subheading {
+    margin-top: 9%;
+    padding-bottom: 19px;
+    margin-left: 9%;
+  }
+  button.explorebtn {
+    background-color: orangered !important;
+    width: 30%;
+    font-size: 0.6rem;
+    margin-top: -2%;
+    margin-left: 5%;
+  }
+  .divhead h3 {
+    margin-left: 25%;
+    margin-top: -9%;
+    background-color: rgb(26, 26, 235);
+    width: 29%;
+  }
+  .cardu {
+    margin-top: 2%;
+  }
+  .boxes .detail li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  div.social-media {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 1rem;
+  }
+  .boxes {
+    padding: 19px;
+    height: 76vh;
+    width: 100%;
+    background-color: rgb(0, 225, 255);
+  }
+  img.SecondslideImages {
+    height: 150px;
+    margin-top: -55% !important;
+    margin-left: -8% !important;
+  }
+  img.SecondslideImage {
+    height: 100px !important;
+    margin-top: -55% !important;
+    margin-left: -3% !important;
+  }
+  h3.textslides {
+    width: 66%;
+    font-size: 0.6rem;
+    font-style: oblique;
+    color: black;
+    position: relative; 
+    top: -20px !important;         
+    margin: 0 auto;
+    margin-left: 6%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .paymentmethods .paymentimages img {
+    height: 65px;
+  }
+
+  .paymentmethods ul li {
+    list-style: none;
+    border: 1px solid wheat;
+    border-radius: 6px;
+    padding: 2px;
+    margin: 5px;
+  }
+  .ondelivery img {
+    height: 55px;
+    margin-left: 2%;
+    margin-top: -4%;
+  }
+  button.Paynowbtn {
+    width: 65% !important;
+    margin-left: 18%;
+  }
+  .Addresscol {
+    margin-top: 7% !important;
+  }
+  .cartuu {
+    width: 99%;
+    margin-left: 0.5%;
+  }
+  .forms {
+    margin-top: -15% !important;
+  }
+  .moves2 {
+    margin-top: -20%;
+  }
+  img.images {
+    width: 190px;
+    height: 190px;
+    margin-left: -5%;
+    margin-top: -10%;
+  }
+  
+}
+
+/* Tablet */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+  .itemcard {
+    width: 22rem !important;
+  }
+
+  .paymentmethods .paymentimages img {
+    height: 65px;
+  }
+
+  .paymentmethods ul li {
+    list-style: none;
+    border: 1px solid wheat;
+    border-radius: 6px;
+    padding: 2px;
+    margin: 5px;
+  }
+  .ondelivery img {
+    height: 55px;
+    margin-left: 2%;
+    margin-top: -4%;
+  }
+  button.Paynowbtn {
+    width: 55% !important;
+    margin-left: 18%;
+    margin-top: 2%;
+  }
+  .move2 {
+    max-width: 320px;
+    height: 93vh !important;
+    margin-top: -95%;
+
+  }
+
+
+  .form {
+    width: 69% !important;
+    margin-left: 7% !important;
+    margin-top: 14% !important;
+    padding: 20px !important;
+  }
+
+  .move {
+    height: 100vh !important;
+    margin-top: -2%;
+    margin-left: -8%;
+    width: 85% !important;
+  }
+
+  img.image {
+    width: 240px;
+    height: 240px;
+  }
+   img.images {
+    width: 240px;
+    height: 240px;
+  }
+  .Top .text h2 {
+    margin-top: 1rem !important;
+  }
+  .welcometext {
+    margin-top: -8%;
+    padding: 2px;
+    font-size: 1rem;
+  }
+  .Top .text h2 {
+    margin-top: 1rem;
+  }
+  img.slides {
+    height: 50vh;
+    margin-left: 63%;
+    padding: 15px;
+  }
+  button.browsebutton {
+    background-color: orangered;
+    border: none;
+    margin-left: -7%;
+    width: 40%;
+    font-size: 0.9rem;
+  }
+
+  h3.textslide {
+    width: 66%;
+    font-size: 1rem;
+    font-style: oblique;
+    color: black;
+    position: relative; 
+    top: -15vh;
+    margin: 0 auto;
+    margin-left: 12%;
+  }
+  p.para {
+    font-size: 0.8rem;
+    margin-left: -45% !important;
+  }
+  img.subcard {
+    height: 50px !important;
+    width: 20%;
+    margin-left: 39%;
+    padding: 2px;
+
+  }
+  .subcards {
+    background-color: #0f3443 !important;
+    width: 49%;
+  }
+
+  .subcards h4 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .secondcard {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 0.5rem;
+    margin: 0.4rem;
+
+  }
+  img.subslide {
+    height: 35vh;
+    width: 40%;
+    margin-left: 59%;
+    margin-top: -19%;
+  }
+  p.cardpara {
+    margin-top: -10%;
+    font-size: 0.7rem !important;
+    width: 60%;
+    margin-left: 5%;
+  }
+  
+  h4.subheading {
+    margin-top: 9%;
+    padding-bottom: 19px;
+    margin-left: 9%;
+  }
+  button.explorebtn {
+    width: 25%;
+    font-size: 0.6rem;
+    margin-top: -2%;
+    margin-left: 5%;
+  }
+  .divhead h3 {
+    margin-left: 25%;
+    margin-top: -2%;
+    background-color: rgb(26, 26, 235);
+    width: 29%;
+  }
+  .cardu {
+    margin-top: 2%;
+  }
+
+  .boxes .detail li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    font-size: 1rem;
+  }
+  div.social-media {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 1rem;
+  }
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 19px;
+    height: 36vh;
+    background-color: rgb(0, 225, 255);
+  }
+  img.SecondslideImages {
+    height: 250px !important;
+    margin-top: -55% !important;
+    margin-left: -8% !important;
+  }
+  img.SecondslideImage {
+    height: 210px !important;
+    margin-top: -55% !important;
+    margin-left: -3% !important;
+  }
+  h3.textslides {
+    width: 66%;
+    font-size: 1rem;
+    font-style: oblique;
+    color: black;
+    position: relative; 
+    top: -15vh !important;         
+    margin: 0 auto;
+    margin-left: 6%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .Addresscol {
+    margin-top: 7% !important;
+  }
+  .cartuu {
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 5%;
+  }
+
+
+}
+
+/* Desktop */
+@media screen and (min-width: 769px) {
+  .Login {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .Top .text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    margin-top: 3rem;
+    margin-left: 5%;
+  }
+  button.LoginBtn {
+    background-color: #757cfd !important ;
+  }
+
+  .Top, .move2, .move {
+    flex: 1;
+  }
+  .move {
+    align-items: start;
+  }
+
+  .form {
+    margin-top: 0;
+    background-color: white;
+    width: 90% !important;
+  }
+  .move {
+    margin-top: 23%;
+    width: 70% !important;
+  }
+  .move2 {
+    max-width: 750px;
+    background-color: #757cfd;
+    height: 92vh !important;
+    margin-top: -66%;
+    margin-left: -2% !important;
+  }
+
+  .moves2 {
+    max-width: 750px;
+    background-color: #8086FF;
+    height: 92vh !important;
+    margin-top: -62%;
+    margin-left: -2% !important;
+  }
+  
+
+  img.image {
+    width: 350px;
+    height: 350px;
+    margin-top: 2rem;
+    margin-left: 3%;
+  }
+   img.images {
+    width: 350px;
+    height: 350px;
+    margin-top: 2rem;
+    margin-left: 3%;
+  }
+  img.slides {
+    height: 65vh;
+    padding: 40px !important;
+    margin-left: 72%;
+    padding: 15px;
+  }
+  button.browsebutton {
+    background-color: orangered;
+    border: none;
+    margin-left: -1%;
+    width: 20%;
+    font-size: 1.3rem;
+    margin-top: -15%;
+  }
+
+  h3.textslide {
+    width: 86%;
+    font-size: 2rem;
+    font-style: oblique;
+    color: black;
+    position: relative; 
+    top: -20vh;
+    margin: 0 auto;
+    margin-left: 5%;
+  }
+  p.para {
+    font-size: 1.5rem;
+    margin-left: -66% !important;
+  }  
+
+  img.subcard {
+    height: 60px !important;
+    width: 20%;
+    padding: 2px;
+
+  }
+  .subcards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 23%;
+    height: 20vh !important;
+    margin-left: 1.3%;
+    margin-top: 1%;
+  }
+
+  .subcards h4 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .secondcard {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 0.5rem;
+    margin: 0.4rem;
+
+  }
+  img.subslide {
+    height: 40vh;
+    padding: 16px;
+    width: 39%;
+    margin-top: -27%;
+    margin-left: 64%;
+  }
+  p.cardpara {
+    margin-top: -29%;
+    font-size: 0.7rem !important;
+    width: 60%;
+    margin-left: 5%;
+  }
+  
+  h4.subheading {
+    margin-top: 5%;
+    padding-bottom: 19px;
+    margin-left: 9%;
+  }
+  button.explorebtn {
+    width: 25%;
+    font-size: 0.6rem;
+    margin-top: -1%;
+    margin-left: 5%;
+  }
+  .divhead h3 {
+    margin-left: 25%;
+    /* margin-top: -1%; */
+    background-color: rgb(26, 26, 235);
+    width: 29%;
+  }
+  .secondslide {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+  input.input {
+    border-radius: 6px;
+    border: 1.5px solid lightseagreen;
+    box-shadow: 9rem;
+  }
+  .cardu {
+    height: 45vh !important;
+    width: 30%;
+  }
+  .boxes .detail li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    font-size: 1rem;
+  }
+  div.social-media {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 1rem;
+  }
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 36vh;
+    gap: 9rem;
+    background-color: rgb(0, 225, 255);
+  }
+  input.input {
+    width: 40%;
+    padding: 0.5rem;
+    background-color: lightcyan;
+    margin-left: 1%;
+  }
+  .Addresscol {
+    width: 30% !important;
+    margin-left: 15% !important;
+  }
+  .accountcol {
+    width: 30% !important;
+  }
+  .text-group input {
+    width: 40%;
+  }
+  img.SecondslideImages {
+    height: 400px !important;
+    margin-top: -30% !important;
+    margin-left: -5% !important;
+  }
+  img.SecondslideImage {
+    height: 300px !important;
+    margin-top: -30% !important;
+    margin-left: -2% !important;
+  }
+  h3.textslides {
+    width: 86%;
+    font-size: 2rem;
+    font-style: oblique;
+    color: black;
+    position: relative; 
+    top: -20vh !important;         
+    margin: 0 auto;
+    margin-left: 6%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .itemcard {
+    width: 26rem !important;
+  }
+
+  .paymentmethods .paymentimages img {
+    height: 65px;
+  }
+
+  .paymentmethods ul li {
+    list-style: none;
+    border: 1px solid wheat;
+    border-radius: 6px;
+    padding: 2px;
+    margin: 5px;
+    width: 40%;
+  }
+  .ondelivery img {
+    height: 25px;
+    margin-left: 2%;
+    margin-top: -7%;
+  }
+  .ondelivery{
+    height: 2vh;
+    width: 30%;
+    margin-left: 1%;
+    margin-top: -2% !important;
+    border-radius: 6px;
+  }
+  h4.homedeltext{
+    font-size: 0.7rem;
+    margin-top: -4%;
+  }
+  button.Paynowbtn {
+    width: 20% !important;
+    margin-left: 15%;
+    margin-top: 2%;
+  }
+
+  img.FakeImg {
+    height: 13rem !important;
+    width: 13rem;
+  }
+ 
+  .SecondapiCard {
+    width: 18rem;
+  }
+
+  .Addresscol {
+    margin-left: 25% !important;
+  }
+  .cartuu {
+    width: 75%;
+    margin-left: 9% !important;
+    margin-top: 5%;
+  }
+  .ordersummary {
+    margin-top: 27%;
+  }
+  button.removebtn {
+    margin-left: 30% !important;
+  }
+  
+
+}
