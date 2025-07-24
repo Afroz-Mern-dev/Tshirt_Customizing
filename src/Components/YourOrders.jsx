@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Card } from 'react-bootstrap';
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 
 const YourOrders = () => {
   const [orders, setOrders] = useState([]);
@@ -7,7 +9,7 @@ const YourOrders = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/orders", {
+        const res = await fetch(`${BACKEND_URL}/api/orders`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
