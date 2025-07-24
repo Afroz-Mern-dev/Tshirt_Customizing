@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Form, Container, Row, Col, Card } from 'react-bootstrap';
 import axios from 'axios';
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 const Account = () => {
   const [formData, setFormData] = useState({
@@ -31,7 +32,7 @@ const Account = () => {
     localStorage.setItem('userAddress', JSON.stringify(address));
 
     try {
-      await axios.post('http://localhost:5000/api/user/account', formData);
+      await axios.post(`${BACKEND_URL}/api/user/account`, formData);
       alert('Details saved to backend!');
     } catch (error) {
       console.error('Error saving to backend:', error);
@@ -39,7 +40,6 @@ const Account = () => {
     }
   };
 
-  // ✅ Make sure this is declared BEFORE the return
   const savedAddress = JSON.parse(localStorage.getItem('userAddress'));
 
   return (
