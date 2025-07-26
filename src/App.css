@@ -197,7 +197,7 @@ button.continuebtn {
     height: 90vh;
   }
   .move {
-    margin-top: 3%;
+    margin-top: -1%;
     margin-left: -9%;
     box-shadow: none;
   }
@@ -374,7 +374,10 @@ button.continuebtn {
     margin-left: 0.5%;
   }
   .forms {
-    margin-top: -15% !important;
+    margin-top: -10% !important;
+  }
+  .form {
+    margin-tp: -3% !important;
   }
   .moves2 {
     margin-top: -20%;
@@ -427,13 +430,13 @@ button.continuebtn {
   .form {
     width: 69% !important;
     margin-left: 7% !important;
-    margin-top: 14% !important;
+    margin-top: 17% !important;
     padding: 20px !important;
   }
 
   .move {
     height: 100vh !important;
-    margin-top: -2%;
+    margin-top: 1%;
     margin-left: -8%;
     width: 85% !important;
   }
@@ -628,12 +631,12 @@ button.continuebtn {
   }
 
   .form {
-    margin-top: 0;
+    margin-top: 1% !important;
     background-color: white;
     width: 90% !important;
   }
   .move {
-    margin-top: 23%;
+    margin-top: 25%;
     width: 70% !important;
   }
   .move2 {
