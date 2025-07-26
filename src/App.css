@@ -189,6 +189,7 @@ button.continuebtn {
   }
 
   .form {
+    margin-top: -5% !important;
     padding: 1rem;
   }
   .move2 {
@@ -197,7 +198,7 @@ button.continuebtn {
     height: 90vh;
   }
   .move {
-    margin-top: -1%;
+    margin-top: -5%;
     margin-left: -9%;
     box-shadow: none;
   }
@@ -374,10 +375,10 @@ button.continuebtn {
     margin-left: 0.5%;
   }
   .forms {
-    margin-top: -10% !important;
+    margin-top: -13% !important;
   }
   .form {
-    margin-tp: -3% !important;
+    margin-tp: -7% !important;
   }
   .moves2 {
     margin-top: -20%;
